@@ -36,6 +36,7 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'osx' \
+  'tmux' \
   'ruby' \
   'syntax-highlighting' \
   'history-substring-search' \
@@ -132,4 +133,7 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Auto start a session when Zsh is launched.
 # zstyle ':prezto:module:tmux' auto-start 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'no'
 
+# Auto switch the Ruby version on directory change.
+zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
